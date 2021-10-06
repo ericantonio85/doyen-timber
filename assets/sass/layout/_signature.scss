@@ -1,0 +1,15 @@
+
+.basic-hero-area.signature {
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-family: 'Signature';
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    p{
+        padding: 20px;
+        max-width: 764px;
+        text-align: center;
+    }
+}

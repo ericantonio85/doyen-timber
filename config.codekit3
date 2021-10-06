@@ -41,6 +41,14 @@
       "oAP" : "\/assets\/fonts\/Avenir.ttc",
       "oF" : 0
     },
+    "\/assets\/fonts\/BrittanySignature.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/BrittanySignature.ttf",
+      "oF" : 0
+    },
     "\/assets\/image\/core-values1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1310,6 +1318,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/sass\/layout\/_signature.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/layout\/_signature.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/sass\/style-min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1853,12 +1876,20 @@
       "oAP" : "\/templates\/page-plugin.twig",
       "oF" : 0
     },
-    "\/templates\/page.twig" : {
+    "\/templates\/page-signature-process.twig.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/page.twig",
+      "oAP" : "\/templates\/page-signature-process.twig.html",
+      "oF" : 0
+    },
+    "\/templates\/page.twig.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.twig.html",
       "oF" : 0
     },
     "\/templates\/partial\/pagination.twig" : {

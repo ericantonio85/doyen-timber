@@ -17,6 +17,12 @@ body {
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Signature';
+  src: url('assets/fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+}
+
 a {
   transition: $transition;
   text-decoration: none;
