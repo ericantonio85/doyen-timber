@@ -1,0 +1,55 @@
+.block-text{
+  background-color: $black;
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 70px;
+  position: relative;
+  &.schedule{
+    padding-bottom: 70px;
+    h2{
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  h2, p{
+    color: $white;
+  }
+  &.clear-bg{
+    background-color: $white;
+    padding-bottom: 60px;
+    .wrapper{
+      max-width:768px;
+    }
+    h2, p{
+      color: $dark-blue;
+    }
+    p{
+      font-size: 2.4rem;
+      letter-spacing: .12px;
+    }
+  }
+
+}
+.custom-block-text{
+  padding:100px 0;
+  position: relative;
+  color: $dark-blue;
+  &.light-blue {
+    background-color: $light-blue;
+    * {
+      color: $dark-blue;
+    }
+  }
+  &.dark-blue{
+    background-color: $dark-blue;
+    * {
+      color: $white;
+    }
+  }
+  &.royal-blue{
+    background-color: $royal-blue;
+    * {
+      color: $white;
+    }
+  }
+}

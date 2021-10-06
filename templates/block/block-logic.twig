@@ -1,0 +1,32 @@
+{% for block in post.get_field('flexible_content') %}
+
+    {% set block_class = block.acf_fc_layout  %}
+    {% if block_class == 'black_cta' %}
+        {% include 'block/_black_cta.twig' %}
+    {% elseif block_class == 'home_caroussel' %}
+        {% include 'block/_block_home_caroussel.twig' %}
+    {% elseif block_class == 'block_text_image' %}
+        {% include 'block/_block_text_image_bg.twig' %}
+    {% elseif block_class == 'what_we_do_cta' %}
+        {% include 'block/_block_what_we_do_cta.twig' %}
+    {% elseif block_class == 'block_our_services' %}
+        {% include 'block/_block_our_services.twig' %}
+    {% elseif block_class == 'block_who_we_are_three_cols' %}
+        {% include 'block/_block_who_we_are_three_cols.twig' %}
+    {% elseif block_class == 'block_our_team' %}
+        {% include 'block/_block_our_team.html' %}
+    {% elseif block_class == 'block_what_you_believe_two_col' %}
+        {% include 'block/_block_what_you_believe_two_col.html' %}
+    {% elseif block_class == 'block_core_values' %}
+        {% include 'block/_block_core_values.html' %}
+    {% elseif block_class == 'block_shortcode' %}
+        {% include 'block/_block_shortcode.html' %}
+    {% elseif block_class == 'block_contact_box' %}
+        {% include 'block/_block_contact_box.html' %}
+    {% elseif block_class == 'how_we_do_it_content' %}
+        {% include 'block/_how_we_do_it_content.html' %}
+    {% elseif block_class == 'block_cta_image' %}
+        {% include 'block/_block_cta_image.html' %}
+    {% endif %}
+
+{% endfor %}

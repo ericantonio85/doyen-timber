@@ -1,0 +1,64 @@
+.page-hero{
+  .page-careers &{
+    .wrapper{
+      max-width:1065px;
+    }
+  }
+  .wrapper{
+    @include min-screen(1050px){
+      min-width: 1050px
+    }
+  }
+}
+.page-hero-area{
+  background-color: $light-blue;
+  padding:0;
+  color: $dark-blue;
+  text-align: center;
+  min-height:230px;
+  display: flex;
+  align-items: center;
+  @include max-screen($m){
+    min-height:100px;
+    padding:50px 0;
+  }
+  .inner{
+    width:100%;
+    .wrapper{
+      max-width: 1065px;
+    }
+  }
+  h1, a{
+    color: $dark-blue;
+    text-transform: capitalize;
+    text-align: left;
+    margin:0;
+    @include max-screen($m){
+      font-size: 6rem;
+      line-height: 60px;
+    }
+  }
+  .cat{
+    font-size: 1.4rem;
+    letter-spacing:1.68px;
+    font-weight: normal;
+  }
+}
+.article-body{
+  h3{
+    font-size: 3rem;
+    letter-spacing: .3px;
+    line-height: 34px;
+  }
+  p{
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing:.05rem;
+  }
+  a{
+    color: $royal-blue;
+    &:hover{
+      color: $red;
+    }
+  }
+}

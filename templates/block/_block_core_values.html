@@ -1,0 +1,34 @@
+    <div class="core-values">
+        <h2 class="base text-center">{{ block.title }}</h2>
+
+        {% for item in block.core_values_items %}
+            <div class="bg-image {{ item.image_position}}" style="background-image: url({{ item.image.url }})">
+                
+            </div>
+            <div class="block {{ item.image_position}}">
+                <div class="col empty">
+                </div>
+                <div class="col black">
+                    {{ item.left_content }}
+                </div>
+                <div class="col">
+                    {{ item.right_content }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    {# <div class="core-values right">
+        <div class="bg-image" style="background: url({{theme.link}}/assets/image/core-values1.svg)">
+        </div>
+        <div class="block">
+            <div class="col">
+                <h3 class="title-accent">Excellence</h3>
+                <p>Excellence bridges the gap between perfection and ability. At Doyen Consulting Group, we believe in what we do so much, that it warrants our persistent commitment to being better, every single day. Excellence, in practice, is the driving force of our day-to-day actions, decisions and investment. Excellence is our commitment to not just rely on our personal and professional experience and expertise, but to build on it – to create and live by new standards for our entire industry. Excellence is our character.</p>
+            </div>
+            <div class="col black">
+                <h3 class="title-accent">Leadership</h3>
+                <p>A leader takes responsibility for finding the potential in people and processes, and has the courage to develop that potential. Leadership requires bravery, and a courageous culture. At Doyen Consulting Group, we define leadership as the willingness to have an open heart and mind, to be fearless in owning our parts, to listen with the same passion withwhich we want to be heard, and to set aside our own stories, insecurities, and ego-driven agendas.</p>
+            </div>
+        </div>
+    </div> #}

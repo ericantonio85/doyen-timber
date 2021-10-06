@@ -1,0 +1,42 @@
+.block-resources{
+  color: $dark-blue;
+  text-align: center;
+  background-color: $light-blue;
+  padding:30px 0;
+  a{
+    color: $dark-blue;
+    
+  }
+  .articles{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    text-align: center;
+  }
+  .item{
+    padding: 10px;
+    max-width:33.3%;
+    .cont-image{
+      //width:376px;
+      height:283px;
+      .image{
+        display: block;
+        background-size: cover;
+        height: 100%;
+      }
+    }
+    h3{
+      margin:10px 0;
+    }
+    .content{
+      text-align: left;
+      padding:20px;
+      background-color: white;
+      .date{
+        color: $blue-grey;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

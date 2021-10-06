@@ -1,0 +1,211 @@
+.sectors-page,.sector-page, .page-template-page-solution-tpl{
+  .content-wrapper{
+    background: $black;
+    padding:50px 0;
+    color: $white;
+    text-align: center;
+    @include min-screen($l){
+      text-align: left;
+    }
+    h1{
+      color: $white;
+      font-size: 7.2rem;
+      letter-spacing: -0.72px;
+      margin:10px 0;
+    }
+    h3{
+      color: $white;
+    }
+    .article-body {
+      max-width: 390px;
+      margin: 0 auto;
+      @include min-screen($l) {
+        margin:0;
+      }
+      p{
+        font-size: 2.4rem;
+        letter-spacing: 0.12px;
+        color: $medium-blue;
+      }
+    }
+    .block-sectors{
+      @include min-screen($l){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        position: relative;
+        justify-content: space-between;
+        margin-bottom: -331px;
+      }
+      .use-case-item{
+        text-align: center;
+        display: flex;
+        width:460px;
+        height:740px;
+        position: relative;
+        a.use-cases-link {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 50%;
+        }
+
+        &:hover{
+          &:before{
+            transform: rotate(180deg) scale(1.05);
+          }
+        }
+        @include max-screen($l){
+          margin:0 auto;
+        }
+        @include max-screen($m){
+          height:630px;
+          width:100%;
+          text-align: center;
+        }
+        @include max-screen($s){
+          height:470px;
+          margin:20px 0;
+          //h3{
+          //  margin:5px 0;
+          //  font-size: 2.5rem;
+          //  line-height: 30px;
+          //}
+          //p{
+          //  margin:10px 0;
+          //}
+        }
+        //@include min-screen($l){
+        //  margin:50px 0;
+        //  width:460px;
+        //  height:650px;
+        //}
+        //@include min-screen($xl){
+        //  width:540px;
+        //  height:650px;
+        //}
+        .sector-details{
+          z-index:2;
+          //overflow: hidden;
+          @include max-screen($m){
+            margin:0 auto;
+          }
+          .image{
+            width:460px;
+            height:460px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 50px;
+            @include max-screen($s) {
+              width: 280px;
+              height: 280px;
+              margin-bottom: 20px;
+            }
+            transition: all .4s ease;
+            &:hover{
+              border-radius: 50% 0 50% 50%;
+              a{
+                transform: scale(1.05);
+              }
+            }
+            .inner{
+              transition: all .4s ease;
+              border-radius: 50% 0 50% 50%;
+              overflow: hidden;
+              transform: scale(1);
+
+              @include max-screen($m){
+                //transform: scale(.8);
+              }
+              @include max-screen($s){
+                width:280px;
+                height:280px;
+                //transform: scale(.9);
+              }
+              a.bg-image{
+                width:460px;
+                height:460px;
+                display: block;
+
+                background-position: center center;
+                background-size: cover;
+              }
+            }
+          }
+
+
+          > a.view-sector{
+            color: $white;
+            border-bottom: 3px solid $red;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            letter-spacing: .32px;
+            padding-bottom: 0;
+            &:hover{
+              padding-bottom: 5px;
+            }
+          }
+          .subtitle{
+            font-size: 1.6rem;
+            max-width: 272px;
+            line-height: 24px;
+            letter-spacing: .16px;
+            margin: 0 auto 20px;
+            color: $white;
+          }
+          h3{
+            font-size: 3rem;
+            letter-spacing: 0.3px;
+            line-height: 34px;
+          }
+        }
+
+
+
+        &:nth-child(odd){
+          position: relative;
+          @include min-screen($l){
+            bottom:240px;
+          }
+        }
+
+      }
+      .brief{
+        max-width: 474px;
+        margin:0 auto;
+        position: absolute;
+        left:0;
+        bottom:550px;
+        @include max-screen($l){
+          position: inherit;
+        }
+        @include max-screen($m){}
+        margin-top: 50px;
+        //@include min-screen($l) {
+        //  margin:0;
+        //  position: absolute;
+        //  left: 0;
+        //  bottom: 0;
+        //}
+        //@include min-screen($l) {
+        //  bottom:250px;
+        //}
+        //@include min-screen($xl) {
+        //  bottom: 300px;
+        //}
+        h2{
+          color: $white;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+.term-federal-government, .term-sled{
+  .archive-sector{
+    a.btn-action{
+      //display: none;
+    }
+  }
+}

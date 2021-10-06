@@ -1,0 +1,180 @@
+.single-blog{
+  color: $black;
+  h1{
+    font-size: 7.2rem;
+    line-height: 72px;
+    margin:0 0 40px 0;
+    letter-spacing: 1.2px;
+    @include max-screen($m){
+      font-size: 4rem;
+      line-height: 40px;
+    }
+  }
+  .blog-author{
+    color: $blue-grey;
+    font-size: 1.4rem;
+    letter-spacing: 0.28px;
+    font-weight: 600;
+    a{
+      color: $blue-grey;
+      &:hover{
+        color: $accent-color;
+      }
+    }
+  }
+  .social-sharing{
+    height:50px;
+    transform: scale(.9);
+    .sfsi_wicons.shuffeldiv {
+      transform: scale(.9);
+    }
+    float: right;
+    position: relative;
+    top:-10px;
+    display: inline-block;
+    width:130px;
+  }
+  .article-body{
+    max-width:768px;
+    margin:70px auto;
+    color: $dark-blue;
+    font-size: 2rem;
+    letter-spacing: 0.1px;
+  }
+  .post-thumbnail{
+    &.data-sheet{
+      display: none;
+    }
+    margin:60px 0;
+    img{
+      width:100%;
+    }
+  }
+}
+.post-categories{
+  list-style: none;
+  margin:50px 0 10px;
+  padding:0;
+  li{
+    margin:0;
+    display: inline-block;
+    &::after{
+      content: ',';
+    }
+    &:last-child{
+      &::after{
+        content: '';
+      }
+    }
+    a{
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $blue-grey;
+      letter-spacing: 1.68px;
+    }
+  }
+}
+.single{
+  .block-resources{
+    h2{
+      text-align: left;
+    }
+  }
+  .video-embed{
+    margin:0 auto;
+    iframe{
+      width:100%;
+      height:600px;
+      @include max-screen($m){
+        height:400px;
+      }
+      @include max-screen($s){
+        height:230px;
+      }
+    }
+  }
+}
+.data-sheet-column{
+  h2{
+    font-size: 3rem;
+    line-height: 34px;
+  }
+  form{
+    max-width:377px;
+    a{
+      color: $royal-blue;
+    }
+  }
+  .inner{
+    margin-left: 50px;
+    @include max-screen($m){
+      margin-top: 30px;
+      margin-left: 0;
+      h2{
+        max-width:377px;
+      }
+    }
+  }
+}
+.file-to-download{
+  visibility: hidden;
+}
+.page-hero{
+  min-height:390px;
+  background-color: $light-blue;
+  color: $dark-blue;
+  .page-events &{
+    min-height:230px;
+    h1{
+      font-size: 7.2rem;
+      position: relative;
+      top:25px;
+    }
+  }
+
+  .left-block{
+    .uk-flex{
+      height:390px;
+      @include max-screen($m){
+        margin-top: 50px;
+        height:auto;
+      }
+    }
+    h1{
+      margin-top: 0;
+      font-size: 7.2rem;
+      margin-bottom: 20px;
+    }
+    .content{
+      max-width:660px;
+      font-size: 2.4rem;
+    }
+
+  }
+  .right-block{
+    .uk-flex{
+      height:390px;
+      @include max-screen($m){
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height:auto;
+      }
+      h3{
+        margin-bottom: -20px;
+        padding-top: 40px;
+      }
+      p{
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+.max-button.btn-action{
+  color: $white;
+  padding:17px 30px;
+  width:auto;
+  margin-top: 50px;
+  &:hover{
+    color: $white;
+  }
+}

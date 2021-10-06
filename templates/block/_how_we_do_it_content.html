@@ -1,0 +1,14 @@
+<div class="process">
+    {% for item in block.items %}
+        <div class="process-flex">
+            <div class="content">
+                {{ item.content }}
+            </div>
+            <div class="middle">
+                <img src="{{ item.icon }}" alt="">
+                <img class="icon_hover" src="{{ item.icon_hover }}" alt="">
+            </div>
+            <div class="content"></div>
+        </div>
+    {% endfor %}
+</div>

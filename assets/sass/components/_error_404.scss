@@ -1,0 +1,56 @@
+.bg-404{
+  background-color: $black;
+  padding:100px 0;
+  color: $white;
+  .cont-icon i{
+    display: block;
+    width:140px;
+    height:140px;
+    margin:0 auto;
+    background: url("./assets/image/icon404.svg") no-repeat;
+    background-size: cover;
+  }
+  .content{
+    text-align: center;
+    h1{
+      color: $white;
+      font-size: 7.2rem;
+      letter-spacing: -.72px;
+    }
+    h4{
+      color: $white;
+      font-size: 1.4rem;
+      letter-spacing:1.68px;
+      text-transform: uppercase;
+    }
+    .search-form {
+      max-width:none;
+      width:572px;
+      height:auto;
+      margin:0 auto;
+      padding:50px 0;
+      @include max-screen($s){
+        width:300px;
+      }
+      form{
+        position: relative;
+      }
+      input[type="text"]{
+        width:100%;
+        border:none;
+        border-bottom: 3px solid $white;
+        background: transparent;
+        outline:none;
+        height:50px;
+        font-size: 3rem;
+        color: $light-blue;
+      }
+      i{
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+        font-size: 30px;
+      }
+    }
+  }
+}

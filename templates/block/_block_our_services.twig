@@ -1,0 +1,34 @@
+<div class="our-service ">
+        <h2>{{ block.title }}</h2>
+
+        <ul class="links" id="tabs">
+        {% for item in block.services %}
+        {% set state = ''%}
+        {% if loop.index==1 %}
+            {% set state = 'active'%}
+        {% endif %}
+            <li class="{{ state }}"><a href="#tab{{ loop.index }}">{{ item.title }}</a></li>
+        {% endfor %}
+        </ul>
+
+        
+
+        {% for item in block.services %}
+
+            <div class="container-tab" id="tab{{ loop.index }}">
+                <div class="icon">
+                    <img class="" src="{{ item.logo.url }}" alt="">
+                </div>
+
+                <p>
+                    {{ item.content }}
+                </p>
+
+                <div><a href="{{ item.link.url }}" class="cta">{{ item.link.title }}</a></div>
+            </div>
+
+        {% endfor %}
+
+    
+        
+    </div>

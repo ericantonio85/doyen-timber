@@ -1,0 +1,13 @@
+<div class="contact-boxes">
+
+    {% for item in block.box %}
+    <div class="col">
+        <div class="box" style="background-image: url('{{ item.image.url }}');">
+            <h3> {{ item.title }}</h3>
+                <div class="content">
+                    {{ item.content }}
+                </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

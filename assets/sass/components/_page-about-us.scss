@@ -1,0 +1,68 @@
+.hero-area{
+  background-color: $black;
+  padding:100px 0;
+  .delimiter{
+    max-width:470px;
+  }
+  article{
+    max-width:1155px;
+    margin:0 auto;
+  }
+  h1{
+    color: $white;
+    font-size: 7.2rem;
+    letter-spacing:-0.72px;
+    margin:0 0 30px 0;
+    @include max-screen($s){
+      font-size: 5rem;
+    }
+  }
+  p{
+    margin:0;
+    font-style: 2.4rem;
+    color: $blue-grey;
+    line-height: 34px;
+    letter-spacing: .12px;
+    @include max-screen($m){
+      font-size: 1.9rem;
+    }
+  }
+  .logo{
+    position: absolute;
+    right:198px;
+    transform: scale(2.8);
+    .logowrap{
+      left:0;
+    }
+  }
+}
+.team_content{
+  padding:100px 0;
+  background: $light-blue;
+  color: $dark-blue;
+  .wrapper{
+    max-width:768px;
+  }
+  h2{
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .logos{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    .logo-img{
+      margin:20px;
+      display: block;
+      overflow: hidden;
+      padding:0;
+      img{
+        width:100%;
+        //max-width: 90px;
+        height:auto;
+        display: block;
+      }
+    }
+  }
+}

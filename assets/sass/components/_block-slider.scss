@@ -1,0 +1,110 @@
+.block-slider{
+  text-align: center;
+  background-color: $light-blue;
+  padding:100px 0 60px;
+  .slick-slider{
+    margin-top: 30px;
+    overflow: visible;
+    button.slick-arrow{
+      display: none!important;
+    }
+    ul.slick-dots{
+      display: flex!important;
+      justify-content: center;
+      li{
+        padding:0px 5px;
+        display: block;
+        &.slick-active button{
+          background-color: $royal-blue;
+        }
+        button{
+          padding:0;
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          border: 3px solid rgba(102,102,102,0.4);
+          color: transparent;
+          background: transparent;
+          outline: none;
+        }
+      }
+    }
+    .slider-item{
+      margin:0 65px;
+      padding:50px 0px;
+      max-width:768px;
+      opacity:.3;
+      transition: opacity .5s linear;
+      outline:none;
+      &.slick-active{
+        opacity:1;
+      }
+      @include max-screen($m){
+        margin:0 20px;
+      }
+      @include max-screen($s){
+        margin:0 10px;
+      }
+      img{
+        box-shadow: 12px 12px 40px #00000026;
+        width:768px;
+        display: block;
+        @include max-screen($m){
+          width:550px;
+        }
+        @include max-screen($s){
+          width:280px;
+        }
+      }
+    }
+
+  }
+  .uk-slider{
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+  h2{
+    font-size: 4.8rem;
+    letter-spacing: -0.48px;;
+    @include max-screen($s){
+      font-size: 4rem;
+    }
+  }
+  h4{
+    font-size: 2.4rem;
+    max-width: 572px;
+    letter-spacing: .12px;
+    font-weight: normal;
+    margin:10px auto 0;
+    @include max-screen($s){
+      margin-bottom: 0px;
+    }
+    a{
+      color: $dark-blue;
+      border-bottom: 3px solid $red;
+      &:hover{
+        color: $royal-blue;
+      }
+    }
+  }
+  li.slide {
+    margin:0 20px;
+    img{
+      box-shadow: 12px 12px 40px #00000026;
+      //max-height:580px;
+      max-width:768px;
+    }
+  }
+  .uk-dotnav{
+    position: relative;
+    bottom: -70px;
+  }
+  .uk-slider-items{
+    .uk-cover-container{
+      overflow: visible;
+    }
+  }
+  .uk-slider-container{
+    overflow: visible;
+  }
+}

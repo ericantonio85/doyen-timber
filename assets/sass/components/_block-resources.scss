@@ -1,0 +1,124 @@
+.block-resources{
+  color: $dark-blue;
+  text-align: center;
+  background-color: $light-blue;
+  padding:160px 0;
+  .home-page &{
+    padding:90px 0;
+  }
+  .inner{
+    background-color: white;
+  }
+  &.single, .archive &{
+    text-align: left;
+  }
+  h2{
+    .single &{
+      margin-bottom: 50px;
+    }
+    a {
+      display: none;
+      font-size: 1.6rem;
+      letter-spacing: .32px;
+      float: right;
+      //color: $dark-blue;
+      //border-bottom: 3px solid $red;
+      line-height: 20px;
+      top:18px;
+      padding-bottom: 0;
+      position: relative;
+      &:after{
+        transition: all linear .1s;
+        content: '';
+        border-bottom: 3px solid $red;
+        width:100%;
+        display: inline-block;
+        position: absolute;
+        left:0;
+        bottom:-1px;
+      }
+      &:hover{
+        //padding-bottom: 5px;
+        &:after{
+          bottom:-4px;
+        }
+      }
+      .single-use_cases &, .single &, .archive &{
+        display: block;
+
+        @include max-screen($s){
+          display: block;
+          clear: both;
+          float: none;
+        }
+      }
+    }
+  }
+  @include max-screen(1300px){
+    padding:160px 20px;
+  }
+  a{
+    //color: $dark-blue;
+    
+  }
+  .articles{
+    /*display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;*/
+    text-align: center;
+  }
+  .item{
+    //padding: 10px;
+    max-width: 500px;
+    margin: 10px auto;
+    .cont-image{
+      //width:376px;
+      height:230px;
+      overflow: hidden;
+      &.isvideo{
+        height:210px;
+      }
+      .image, .video{
+        display: block;
+        background-size: cover;
+        height: 100%;
+        transition: ease .5s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      .video{
+        iframe{
+          width:100%;
+          height:210px;
+        }
+      }
+      .largevideo{
+        iframe{
+          width:100%;
+          height:230px;
+        }
+      }
+    }
+    h3{
+      margin:10px 0;
+    }
+    .content{
+      text-align: left;
+      padding:20px;
+      background-color: white;
+      .date{
+        color: $blue-grey;
+        font-size: 1.2rem;
+        letter-spacing: .05rem;
+      }
+    }
+  }
+  .view{
+    display: none;
+    .home-page &{
+      display: inline-block;
+    }
+  }
+}

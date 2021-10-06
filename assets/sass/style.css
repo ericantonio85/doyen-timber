@@ -1,0 +1,1514 @@
+/*
+ * Theme Name: Timber-starter
+ * Description: Starter Theme to use with Timber
+ * Author: Alexandra Spalato
+*/
+/*! sanitize.css v7.0.3 | CC0 License | github.com/csstools/sanitize.css */
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add border box sizing in all browsers (opinionated).
+ */
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 2 */
+}
+
+/**
+  * 1. Add text decoration inheritance in all browsers (opinionated).
+  * 2. Add vertical alignment inheritance in all browsers (opinionated).
+  */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
+}
+
+/**
+  * 1. Use the default cursor in all browsers (opinionated).
+  * 2. Use the default user interface font in all browsers (opinionated).
+  * 3. Correct the line height in all browsers.
+  * 4. Use a 4-space tab width in all browsers (opinionated).
+  * 5. Prevent adjustments of font size after orientation changes in
+  *    IE on Windows Phone and in iOS.
+  * 6. Breaks words to prevent overflow in all browsers (opinionated).
+  */
+html {
+  cursor: default;
+  /* 1 */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 2 */
+  line-height: 1.15;
+  /* 3 */
+  -moz-tab-size: 4;
+  /* 4 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 4 */
+  -ms-text-size-adjust: 100%;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 5 */
+  word-break: break-word;
+  /* 6 */
+}
+
+/* Sections
+  * ========================================================================== */
+/**
+  * Remove the margin in all browsers (opinionated).
+  */
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/**
+  * Correct the font size and margin on `h1` elements within `section` and
+  * `article` contexts in Chrome, Firefox, and Safari.
+  */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+  * ========================================================================== */
+/**
+  * 1. Add the correct sizing in Firefox.
+  * 2. Show the overflow in Edge and IE.
+  */
+hr {
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+  * Add the correct display in IE.
+  */
+main {
+  display: block;
+}
+
+/**
+  * Remove the list style on navigation lists in all browsers (opinionated).
+  */
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/**
+  * 1. Use the default monospace user interface font
+  *    in all browsers (opinionated).
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
+pre {
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+  * ========================================================================== */
+/**
+  * Remove the gray background on active links in IE 10.
+  */
+a {
+  background-color: transparent;
+}
+
+/**
+  * Add the correct text decoration in Edge, IE, Opera, and Safari.
+  */
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+  * Add the correct font weight in Chrome, Edge, and Safari.
+  */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+  * 1. Use the default monospace user interface font
+  *    in all browsers (opinionated).
+  * 2. Correct the odd `em` font sizing in all browsers.
+  */
+code,
+kbd,
+samp {
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Oxygen Mono, Liberation Mono, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+  * Add the correct font size in all browsers.
+  */
+small {
+  font-size: 80%;
+}
+
+/*
+  * Remove the text shadow on text selections in Firefox 61- (opinionated).
+  * 1. Restore the coloring undone by defining the text shadow
+  *    in all browsers (opinionated).
+  */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000;
+  /* 1 */
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000;
+  /* 1 */
+  text-shadow: none;
+}
+
+/* Embedded content
+  * ========================================================================== */
+/*
+  * Change the alignment on media elements in all browers (opinionated).
+  */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+  * Add the correct display in IE 9-.
+  */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+  * Add the correct display in iOS 4-7.
+  */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+  * Remove the border on images inside links in IE 10-.
+  */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+/**
+  * Change the fill color to match the text color in all browsers (opinionated).
+  */
+svg {
+  fill: currentColor;
+}
+
+/**
+  * Hide the overflow in IE.
+  */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+  * ========================================================================== */
+/**
+  * Collapse border spacing in all browsers (opinionated).
+  */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms
+  * ========================================================================== */
+/**
+  * Inherit styling in all browsers (opinionated).
+  */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/**
+  * Remove the margin in Safari.
+  */
+button,
+input,
+select {
+  margin: 0;
+}
+
+/**
+  * 1. Show the overflow in IE.
+  * 2. Remove the inheritance of text transform in Edge, Firefox, and IE.
+  */
+button {
+  overflow: visible;
+  /* 1 */
+  text-transform: none;
+  /* 2 */
+}
+
+/**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+  * Correct the padding in Firefox.
+  */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+  * Show the overflow in Edge and IE.
+  */
+input {
+  overflow: visible;
+}
+
+/**
+  * 1. Correct the text wrapping in Edge and IE.
+  * 2. Correct the color inheritance from `fieldset` elements in IE.
+  */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+  * 1. Add the correct display in Edge and IE.
+  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+  */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+  * Remove the inheritance of text transform in Firefox.
+  */
+select {
+  text-transform: none;
+}
+
+/**
+  * 1. Remove the margin in Firefox and Safari.
+  * 2. Remove the default vertical scrollbar in IE.
+  * 3. Change the resize direction on textareas in all browsers (opinionated).
+  */
+textarea {
+  margin: 0;
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  resize: vertical;
+  /* 3 */
+}
+
+/**
+  * Remove the padding in IE 10-.
+  */
+[type='checkbox'],
+[type='radio'] {
+  padding: 0;
+}
+
+/**
+  * 1. Correct the odd appearance in Chrome and Safari.
+  * 2. Correct the outline style in Safari.
+  */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+  * Correct the cursor style of increment and decrement buttons in Safari.
+  */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+  * Correct the text style of placeholders in Chrome, Edge, and Safari.
+  */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+  * Remove the inner padding in Chrome and Safari on macOS.
+  */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+  * 1. Correct the inability to style clickable types in iOS and Safari.
+  * 2. Change font properties to `inherit` in Safari.
+  */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+  * Remove the inner border and padding of focus outlines in Firefox.
+  */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+  * Restore the focus outline styles unset by the previous rule in Firefox.
+  */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Interactive
+  * ========================================================================== */
+/*
+  * Add the correct display in Edge and IE.
+  */
+details {
+  display: block;
+}
+
+/*
+  * Add the correct styles in Edge, IE, and Safari.
+  */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+/*
+  * Add the correct display in all browsers.
+  */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+  * ========================================================================== */
+/**
+  * Add the correct display in IE 9-.
+  */
+canvas {
+  display: inline-block;
+}
+
+/**
+  * Add the correct display in IE.
+  */
+template {
+  display: none;
+}
+
+/* User interaction
+  * ========================================================================== */
+/*
+  * 1. Remove the tapping delay on clickable elements
+	   in all browsers (opinionated).
+  * 2. Remove the tapping delay in IE 10.
+  */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  /* 1 */
+  touch-action: manipulation;
+  /* 2 */
+}
+
+/**
+  * Add the correct display in IE 10-.
+  */
+[hidden] {
+  display: none;
+}
+
+/* Accessibility
+  * ========================================================================== */
+/**
+  * Change the cursor on busy elements in all browsers (opinionated).
+  */
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+/*
+  * Change the cursor on control elements in all browsers (opinionated).
+  */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+  * Change the cursor on disabled, not-editable, or otherwise
+  * inoperable elements in all browsers (opinionated).
+  */
+[aria-disabled],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+  * Change the display on visually hidden accessible elements
+  * in all browsers (opinionated).
+  */
+[aria-hidden='false'][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.transition, .btn-action {
+  opacity: .9;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.transition:hover, .btn-action:hover {
+  opacity: 1;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+html, body {
+  background-color: #151515;
+  color: white;
+}
+
+html.home, body.home {
+  background: #e3d1c8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e3d1c8), color-stop(43%, #151515), to(#151515));
+  background: linear-gradient(180deg, #e3d1c8 0%, #151515 43%, #151515 100%);
+}
+
+html {
+  font-size: 62.5% !important;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("assets/fonts/Avenir Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #D0B4A7;
+}
+
+a:hover {
+  color: #D0B4A7;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 22px;
+  letter-spacing: .75px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.base-title {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+  margin-top: 15px;
+}
+
+strong,
+b,
+.bold {
+  font-family: "Montserrat-extrabold";
+  letter-spacing: .75px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  font-family: Montserrat;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+.text-small {
+  font-size: 1.2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 2.0rem;
+  line-height: 30px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.cat {
+  color: #516c8e;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cat a {
+  color: #516c8e;
+  letter-spacing: .05rem;
+}
+
+.view {
+  margin: 20px 0;
+}
+
+.view a {
+  color: #04246d;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.view a:after {
+  -webkit-transition: all linear .1s;
+  transition: all linear .1s;
+  content: '';
+  border-bottom: 3px solid #E84B4B;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.view a:hover:after {
+  bottom: -4px;
+}
+
+a {
+  color: white;
+}
+
+a a:hover {
+  color: #D0B4A7;
+}
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6, .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge, .uk-heading-2xlarge {
+  color: white;
+}
+
+.highlight-block h1, .highlight-block .uk-h1, .highlight-block h2, .highlight-block .uk-h2, .highlight-block h3, .highlight-block .uk-h3, .highlight-block h4, .highlight-block .uk-h4, .highlight-block h5, .highlight-block .uk-h5, .highlight-block h6, .highlight-block .uk-h6, .highlight-block .uk-heading-small, .highlight-block .uk-heading-medium, .highlight-block .uk-heading-large, .highlight-block .uk-heading-xlarge, .highlight-block .uk-heading-2xlarge {
+  color: #fff;
+}
+
+/* WordPress
+--------------------------------------------- */
+.aligncenter {
+  text-align: center;
+}
+
+a.aligncenter img {
+  display: block;
+  margin: 0 auto;
+}
+
+a.alignnone {
+  display: inline-block;
+}
+
+.alignleft {
+  float: left;
+  text-align: left;
+}
+
+.alignright {
+  float: right;
+  text-align: right;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+  max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+img.alignnone,
+.alignnone {
+  margin-bottom: 1.5rem;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 20px 20px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 20px 20px;
+}
+
+.gallery-caption,
+.wp-caption-text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+  margin-bottom: 0;
+}
+
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+  margin: 0 0 3rem;
+}
+
+header {
+  padding-top: 20px;
+}
+
+header nav {
+  padding-top: 20px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 800;
+  padding: 10px 28px;
+  letter-spacing: 1.2px;
+  line-height: .92;
+  border-radius: 20px;
+  border: 2.5px solid transparent;
+  margin: 0 2px;
+}
+
+header nav ul li:hover a, header nav ul li.active a {
+  color: black;
+  border-radius: 20px;
+  border: 2.5px solid #000;
+}
+
+.black-header header ul > li > a {
+  color: white;
+}
+
+.black-header header ul > li:hover > a, .black-header header ul > li.active > a {
+  color: #D0B4A7;
+  border-color: #D0B4A7;
+}
+
+.black-header .header-bg {
+  background-color: black;
+  height: 118px;
+}
+
+.hero-area {
+  max-width: 764px;
+  margin: 385px auto 0;
+}
+
+.hero-area h2 {
+  font-family: Montserrat;
+  font-size: 9.4rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 4.7px;
+}
+
+.hero-area h3 {
+  color: white;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.hero-area h4 {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 42px;
+}
+
+.hero-area a {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: 3px;
+  text-align: left;
+  margin: 15.8px 106.8px 0 127.2px;
+  padding: 8px 40px;
+  border-radius: 20px;
+  border: solid 2.6pX white;
+}
+
+.hero-area a:hover {
+  border-color: #D0B4A7;
+}
+
+.bottom-text {
+  max-width: 904px;
+  margin: 306px auto 170px;
+}
+
+.bottom-text h3 {
+  font-family: Montserrat;
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 1.33px;
+  text-align: center;
+  color: #fff;
+}
+
+.bottom-text p {
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+  line-height: 18px;
+}
+
+.section .left-content .title {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.section .left-content p {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.section .right-content {
+  min-width: 50%;
+  position: relative;
+  overflow: hidden;
+  max-width: 630px;
+  padding-bottom: 158px;
+}
+
+.section .right-content .last-text {
+  margin-top: 50px;
+  margin-left: 5px;
+  color: #D0B4A7;
+  text-decoration: underline;
+  position: absolute;
+  z-index: 3;
+  left: 170px;
+}
+
+.section .right-content:before {
+  width: 2px;
+  background-color: white;
+  height: 7500px;
+  position: absolute;
+  left: 57px;
+  top: 100px;
+  display: block;
+  content: '';
+}
+
+.section .right-content .text-content {
+  margin-bottom: 40px;
+}
+
+.section .right-content .icon-text-link {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.section .right-content .icon-text-link .text-content {
+  position: relative;
+}
+
+.section .right-content .icon-text-link .text-content h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section .right-content .icon-text-link a h3 span {
+  background: url(assets/image/icons_static/arrow-right.svg) center left no-repeat;
+  width: 18px;
+  height: 11px;
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
+  left: 4px;
+}
+
+.section .right-content .icon-text-link a:hover h3 span {
+  background: url(assets/image/hover_icons/arrow_right_hover.svg) center left no-repeat;
+}
+
+.section .right-content .icon-text-link a p {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.section .right-content .icon-text-link a:hover p {
+  color: white;
+}
+
+.section .right-content .icon-text-link a:hover h3 {
+  color: #D0B4A7;
+}
+
+.section .right-content .icon-text-link a .icon {
+  width: 115px;
+  height: 111px;
+  display: block;
+}
+
+.section .right-content .icon-text-link a .icon.ico-hands {
+  background: url(assets/image/icons_static/Hands_Icon.svg) top left no-repeat;
+  background-size: cover;
+}
+
+.section .right-content .icon-text-link a .icon.ico-heart {
+  background: url(assets/image/icons_static/Heart_Icon.svg) top left no-repeat;
+  background-size: cover;
+}
+
+.section .right-content .icon-text-link a .icon.ico-people {
+  background: url(assets/image/icons_static/People_Icon_1.svg) top left no-repeat;
+  background-size: cover;
+}
+
+.section .right-content .icon-text-link a:hover .icon {
+  width: 115px;
+  height: 111px;
+  display: block;
+}
+
+.section .right-content .icon-text-link a:hover .icon.ico-hands {
+  background: url(assets/image/hover_icons/Hands_Icon_hover.svg) top left no-repeat;
+  background-size: cover;
+}
+
+.section .right-content .icon-text-link a:hover .icon.ico-heart {
+  background: url(assets/image/hover_icons/Heart_Icon_hover.svg) top left no-repeat;
+  background-size: cover;
+}
+
+.section .right-content .icon-text-link a:hover .icon.ico-people {
+  background: url(assets/image/hover_icons/People_Icon_hover.svg) top left no-repeat;
+  background-size: cover;
+}
+
+.black-section {
+  background-color: black;
+}
+
+.black-section .wrap {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+.black-section h2 {
+  font-family: Montserrat;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.44;
+  letter-spacing: 2.25px;
+  margin-bottom: 10px;
+}
+
+.black-section h4 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.71;
+  letter-spacing: 3.1px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.black-section a.cta {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.71;
+  letter-spacing: 2.1px;
+  color: #D0B4A7;
+  border: 2px solid #D0B4A7;
+  border-radius: 20px;
+  padding: 5px 36px;
+}
+
+a.cta {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.71;
+  letter-spacing: 2.1px;
+  color: #D0B4A7;
+  border: 2px solid #D0B4A7;
+  border-radius: 20px;
+  padding: 5px 36px;
+  text-transform: uppercase;
+}
+
+.about-us-section {
+  background-color: #151515;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-us-section:after {
+  display: block;
+  background-image: url(assets/image/feuille.svg);
+  background-repeat: none;
+  background-position: top left;
+  width: 800px;
+  height: 1364px;
+  content: '';
+  position: absolute;
+  right: -330px;
+  top: -190px;
+}
+
+.about-us-section .content {
+  padding: 170px 0 105px;
+  max-width: 1335px;
+}
+
+.about-us-section .content .dots {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.about-us-section .content .dots li {
+  width: 71px;
+  height: 2px;
+  margin-right: 5px;
+  background-color: #D0B4A7;
+  display: inline-block;
+  opacity: .3;
+}
+
+.about-us-section .content .dots li.active {
+  opacity: 1;
+}
+
+.about-us-section h2 {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 2.25px;
+  text-align: left;
+  max-width: 550px;
+  padding-left: 170px;
+  border-bottom: 2px solid #d0b4a7;
+  padding-bottom: 30px;
+  margin-right: 70px;
+}
+
+.about-us-section p {
+  max-width: 610px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 2;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.79;
+  letter-spacing: 0.53px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.basic-hero-area {
+  height: 380px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.basic-hero-area:after {
+  content: '';
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), to(#151515));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #151515 100%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.basic-hero-area h1 {
+  font-family: "Avenir";
+  font-size: 7.2rem;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.86px;
+}
+
+.who-we-are-content {
+  text-align: center;
+}
+
+.who-we-are-content .title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #D0B4A7;
+  margin: 10px 0 0;
+}
+
+.who-we-are-content h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+  margin-top: 15px;
+}
+
+.who-we-are-content p {
+  max-width: 890px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.49px;
+  text-align: center;
+}
+
+.three-col-section .col {
+  max-width: 350px;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.three-col-section .col a {
+  display: block;
+}
+
+.three-col-section .col a .icon {
+  width: 111px;
+  height: 105px;
+  display: inline-block;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.three-col-section .col a .icon.compassionate {
+  background-image: url("assets/image/icons_static/Compassion_Icon.svg");
+}
+
+.three-col-section .col a .icon.diverse {
+  background-image: url("assets/image/icons_static/Diverse_Icon.svg");
+}
+
+.three-col-section .col a .icon.impactful {
+  background-image: url("assets/image/icons_static/Computer_Icon.svg");
+}
+
+.three-col-section .col a:hover h3 {
+  color: #D0B4A7;
+}
+
+.three-col-section .col a:hover .icon.compassionate {
+  background-image: url("assets/image/hover_icons/Compassion_Icon_hover.svg");
+}
+
+.three-col-section .col a:hover .icon.diverse {
+  background-image: url("assets/image/hover_icons/Diverse_Icon_hover.svg");
+}
+
+.three-col-section .col a:hover .icon.impactful {
+  background-image: url("assets/image/hover_icons/Computer_Icon_hover.svg");
+}
+
+.our-team {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.our-team .deco {
+  position: absolute;
+  right: -470px;
+  z-index: 0;
+  top: 370px;
+}
+
+.our-team .team-flex {
+  margin: 70px auto;
+  max-width: 845px;
+  position: relative;
+  z-index: 2;
+}
+
+.our-team .team {
+  margin: 10px;
+  margin-bottom: 60px;
+}
+
+.our-team .team .pix {
+  width: 261px;
+  height: 296px;
+  background-color: white;
+}
+
+.our-team .team h3 {
+  margin: 10px 0 3px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #fff;
+}
+
+.our-team .team p {
+  margin: 0;
+}
+
+.text-image-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-image-bg .fond-50 {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-image-bg h3 {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #fff;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.our-service {
+  text-align: center;
+  margin: 153px 0 0;
+  padding: 70px 0 137px;
+  background: url(assets/image/our-service.svg);
+  position: relative;
+  background-position-x: -570px;
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.our-service .icon {
+  margin: 20px auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.our-service p {
+  max-width: 696px;
+  margin: 0 auto;
+}
+
+.our-service h2 {
+  text-transform: uppercase;
+  font-family: "Avenir";
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+  margin-bottom: 50px;
+}
+
+.our-service .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-service .links li {
+  padding: 0px 22px;
+}
+
+.our-service .links li:hover a {
+  border-top: 2px solid #D0B4A7;
+}
+
+.our-service .links li a {
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 2.6px;
+  line-height: 26px;
+  text-align: left;
+}
+
+footer {
+  padding: 70px 0;
+  position: relative;
+  z-index: 2;
+  height: 260px;
+  background: #000;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #fff;
+}
+
+footer .title {
+  font-weight: bold;
+  font-family: Avenir;
+  color: #D0B4A7;
+}
+
+footer .link {
+  font-family: Avenir;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #fff;
+}
+
+footer .link li a {
+  font-family: Avenir;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #fff;
+}
+
+footer .copyright {
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-left: 55px;
+}
+
+footer .link-bottom {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */

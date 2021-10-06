@@ -1,0 +1,37 @@
+.block-quote{
+  background-color: $royal-blue;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .quote{
+    max-width:960px;
+    margin: 0 auto;
+    .quote-logo{
+      margin:20px auto;
+      background: url('./assets/image/quote-logo.svg') no-repeat center center;
+      display: block;
+      width:70px;
+      height:70px;
+    }
+    font-style: italic;
+    font-size: 4.8rem;
+    font-weight:600;
+    line-height: 56px;
+  }
+  .author{
+    margin: 40px 0 0px;
+    font-size: 1.8rem;
+  }
+  .company{
+    font-size: 1.4rem;
+  }
+  .customers{
+    //font-weight: 600;
+    font-size: 1.6rem;
+    margin-top: 50px;
+    a{
+      color: $white;
+      border-bottom: 3px solid #E84B4B;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+header{
+  padding-top: 20px;
+  .logo{
+    margin-right: 25px;
+  }
+  nav{
+    padding-top: 20px;
+    @media screen and (max-width: $lg){
+      // position: fixed;
+      // width: 100%;
+      // height: 100%;
+      // left: 0;
+      // top: 0;
+      // background-color: rgba(0,0,0,.8);
+      position: fixed;
+      // width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transition: .3s linear all;
+      z-index: 20;
+      &.active{
+        width: 100%;
+        background-color: rgba(0,0,0,.9);
+        ul{
+          display: block;
+        }
+      }
+      // display: none;
+    }
+    
+    ul{
+      display: flex;
+      justify-content: end;
+      @media screen and (max-width: $lg){
+        display: none;
+      }
+
+      li{
+        @media screen and (max-width: $lg){
+          padding: 5px 0;
+        }
+        a{
+          text-transform: uppercase;
+          font-family: $base-font;
+          font-size: 1.2rem;  
+          color: $black;
+          font-weight: 800;
+          padding: 10px 20px;  
+          letter-spacing: 1.2px;
+          line-height: .92;
+          margin: 10px 20px;
+          cursor: pointer;
+          border-color: transparent;
+          @media screen and (min-width: $lg){
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 2.5px solid transparent;
+            margin: 0 2px;
+          }
+          @media screen and (min-width: $xl){
+            padding: 10px 28px;  
+          }
+        }
+        &:hover a, &.active a {
+          color: $accent-color;
+          @media screen and (min-width: $lg){
+            border-radius: 20px;
+            color: black;
+            border: 2.5px solid $black;
+          }
+        }
+
+      }
+    }
+    @media screen and (max-width: $lg){
+      ul{
+        li{
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.hamburger {
+  position: fixed;
+  right: 30px;
+  top: 40px;
+  cursor: pointer;
+  display: none;
+  .home &{
+    top: 40px;
+  }
+  @media screen and (max-width: $lg){
+    display: block;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.black-header{
+  header{
+    
+    ul > li > a{
+      color: white;
+    }
+    ul > li{
+      &:hover > a, &.active > a{
+        color: $accent-color;
+        border-color: $accent-color;
+      }
+    }
+  }
+  .header-bg{
+    background-color: black;
+    height: 118px;
+  }
+}
+
+.hero-area{
+  max-width: 764px;
+  margin: 385px auto 0;
+
+  h2{
+    font-family: $base-font;
+    font-size: 9.4rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 4.7px;
+    @media screen and (max-width: $sm){
+      font-size: 4.2rem;
+    }
+  }
+  h3{
+    color: white;
+    font-family: $base-font;
+    font-size: 2rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+  h4{
+    font-family: $base-font;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 42px;
+  }
+  a{
+    font-family: $base-font;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: 3px;
+    text-align: left;
+    padding: 8px 40px;
+    border-radius: 20px;
+    border: solid 2.6pX white;
+    &:hover{
+      border-color: $accent-color;
+    }
+  }
+  
+}

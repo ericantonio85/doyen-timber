@@ -1,0 +1,16 @@
+.uk-dotnav>.uk-active>*{
+  background-color: $royal-blue;
+}
+.uk-dotnav>*>*{
+  width: 12px;
+  height: 12px;
+  border: 3px solid rgba(102,102,102,0.4);
+}
+.uk-accordion-title{
+  &::before{
+    background-image: url("./assets/image/accordion-close.svg");
+    .uk-open &{
+      background-image: url("./assets/image/accordion-open.svg");
+    }
+  }
+}

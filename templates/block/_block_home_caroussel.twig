@@ -1,0 +1,15 @@
+<div class="about-us-section">
+        <div class="content mx-auto xl:flex justify-between">   
+            <h2>{{ block.title }}</h2>
+            <div class="block-caroussel">
+                <div class="slick-caroussel">
+                    {% set testimonials  =  function ('get_testimonials') %}
+                    {% for item in testimonials %}
+                        {{ item.post_content }}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    

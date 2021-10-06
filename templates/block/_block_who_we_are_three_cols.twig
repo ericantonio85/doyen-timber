@@ -1,0 +1,22 @@
+<div class="py-20">
+    <div class="three-col-section lg:flex lg:justify-center">
+
+        {% for item in block.repeater %}
+
+            <div class="col lg:flex-1">
+            <a href="">
+                <div class="relative">
+                    <i class="icon" style="background-image: url('{{ item.logo }}')"><span></span></i>
+                    <i class="icon hover" style="background-image: url('{{ item.hover_logo }}')"><span></span></i>
+                </div>
+                <h3>{{ item.title }}</h3>
+            </a>
+            <p>
+                {{ item.content }}
+            </p>
+        </div>    
+
+        {% endfor %}
+        
+    </div>
+</div>

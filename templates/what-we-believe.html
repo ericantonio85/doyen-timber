@@ -1,0 +1,75 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="what-we-believe.twig">
+    <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
+    
+
+    <div class="black-header ">
+        {% block header %}
+            <div class="header-bg ">
+                <div class="wrapper max-w-screen-xl mx-auto">
+                    <header>
+                        <div class="logo float-left">
+                            <a href="{{site.url}}"><img src="{{theme.link}}/assets/image/logo-white.svg" alt="{{site.name}}"></a>
+                        </div>
+
+                        <nav id="nav-main" class="nav-main" role="navigation">
+                            {% include "menu.twig" with {'items': menu.get_items} %}
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </nav><!-- #nav -->
+
+                    </header>
+            
+                </div>
+            </div>
+        {% endblock %}
+    
+    </div>
+
+
+    <div class="basic-hero-area flex" style="background-image: url('{{ post.thumbnail.src }}');">
+        <h1 class="uppercase">{{ post.title }}</h1>
+    </div>
+
+    {# <div class="two-col-section">
+        <div class="col">
+            <h2 class="small">
+                We are leading 
+                the movement 
+                to revolutionize 
+                mental health care. 
+            </h2>
+        </div>
+        <div class="col">
+            <div class="special-content">
+                <h3 class="accent">Our VISION</h3>
+                <p class="upper">To Revolutionise mental health care</p>
+                <h3 class="accent">Our MISSION</h3>
+                <p class="upper">To discover motivation in the 
+                    disconnected and create relief by 
+                    redefining illness and success</p>
+            </div>
+
+        </div>
+    </div> #}
+
+    
+
+    {% include "templates/block/block-logic.twig" %}
+
+    {% block footer %}
+        {% include 'footer.twig' %}
+        {{ function('wp_footer') }}
+    {% endblock %}
+	</body>
+</html>

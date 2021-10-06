@@ -1,0 +1,110 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+    <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
+    
+
+    <video id="background-video" autoplay loop muted poster="{{theme.link}}/assets/image/landscapejpg.jpg">
+        <source src="{{theme.link}}/assets/video/iStock-641411648.mp4" type="video/mp4">
+    </video>
+
+    <div class="bg-gradient">
+    <div class="wrapper max-w-screen-xl mx-auto">
+            <header class="header" >
+                {% block header %}
+                    <div class="header-bg">
+                        <div class="wrapper max-w-screen-xl mx-auto">
+                            <header>
+                                <div class="logo float-left">
+                                    <a href="{{site.url}}"><img src="{{theme.link}}/assets/image/logo.svg" alt="{{site.name}}"></a>
+                                </div>
+
+                                <nav id="nav-main" class="nav-main" role="navigation">
+                                    {% include "menu.twig" with {'items': menu.get_items} %}
+                                    <div class="hamburger">
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                    </div>
+                                </nav><!-- #nav -->
+
+                            </header>
+                    
+                        </div>
+                    </div>
+                {% endblock %}
+            </header>
+
+        <div class="hero-area text-center">
+            <h2 class="uppercase">{{ post.hero_area_title }}</h2>
+            <h4 class="uppercase">{{ post.hero_area_subtitle }}</h4>
+            <a class="uppercase" href="{{ post.hero_area_link.url }}">{{ post.hero_area_link.title }}</a>
+
+            
+        </div>
+
+        <!-- content -->
+
+        <div class="bottom-text text-center">
+            <h3 class="uppercase pb-5">{{ post.middle_content_title }}</h3>
+            <p>{{ post.middle_content_text }}</p>
+        </div>
+
+
+        <div class="section xl:flex xl:justify-around">
+            <div class="left-content xl:text-left text-center pb-20">
+                <div class="title">{{ post.how_we_help_title }}</div>
+                <div class="content xl:m-0 my-10 m-auto ">
+                    {{ post.how_we_help_left_content | wpautop}}
+                </div>
+                
+            </div>
+            <div class="right-content m-auto pt-30">
+            {% for item_outer in post.meta('how_we_help_icons') %}
+
+                <div class="icon-text-link">
+                    <a href="#" class="flex">
+                        <div class="relative">
+                            <span class="icon ico-hands static"> <img src="{{ item_outer.icon_svg_static }}" /></span>
+                            <span class="icon ico-hands hover"> <img src="{{ item_outer.icon_svg_hover }}" /></span>
+                        </div>
+                        <div class="text-content pl-20">
+                            <h3 class="uppercase">{{ item_outer.title }}<span></span></h3>
+                            <p>{{ item_outer.content_text }}</p>
+                        </div>
+                    </a>
+                    {# {{ item_outer.last_link.title }} #}
+                    {% if item_outer.last_link.title|length %}
+                    <a href="{{  item_outer.last_link.url }}" class="last-text">
+                        {{ item_outer.last_link.title }}
+                    </a>
+                    {% endif %}
+                </div>
+
+                {# {% for item_inner in item_outer.inner_repeater %}
+                    {{ item_inner.title }}
+                {% endfor %} #}
+
+            {% endfor %}
+                
+            </div>
+        </div>
+        <!-- end content -->
+
+    </div>
+    </div>
+
+    {% include "templates/block/block-logic.twig" %}
+    
+    {% block footer %}
+        {% include 'footer.twig' %}
+        {{ function('wp_footer') }}
+    {% endblock %}
+	</body>
+</html>

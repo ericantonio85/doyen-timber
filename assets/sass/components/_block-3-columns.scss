@@ -1,0 +1,15 @@
+.block-3-columns{
+  background-color: $light-blue;
+  padding:20px 0 150px;
+  color: $dark-blue;
+  .item{
+    margin:10px 0 40px;
+    h3{
+      font-size: 3.0rem;
+      line-height: 36px;
+    }
+    p{
+      margin:0;
+    }
+  }
+}

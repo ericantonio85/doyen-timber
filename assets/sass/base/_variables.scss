@@ -1,0 +1,112 @@
+// Colors
+
+$white: #fff;
+$black: #000;
+$dark-blue: #04246d;
+$light-grey: #f4f4f4;
+$medium-grey: #e0e0e0;
+$grey: #9ba2ad;
+$light-blue: #e4ecf0;
+$royal-blue: #3c24fb;
+$medium-blue: #a6b8ce;
+$blue-grey: #516c8e;
+$green: #26bd7d;
+$yellow: #f3b91d;
+$red: #E84B4B;
+$primary-color: $dark-blue;
+$accent-color: #D0B4A7;
+$base-color: $white;
+$base-bg: $white;
+$grey-blue: #a6b8ce;
+$green: #26BF7D;
+$border-color: #ccd6e2;
+$bg: #151515;
+
+//Fonts
+
+$base-font: Montserrat;
+$base-font-extrabold: 'Montserrat-extrabold';
+$avenir: 'Avenir';
+$heading-font: Montserrat, sans-serif;
+
+
+$base-font-size: 1.4rem;
+$base-font-size-m: 1.4rem;
+$base-font-size-s: 1.2rem;
+$heading-font-size: 3.6rem;
+$subheading-font-size: 2.0rem;
+
+//Transitions
+$transition: all 0.2s ease-in-out;
+$transition4: all 0.4s ease-in-out;
+
+//Widths:
+$xs: 360px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+$max-width: 1280px;
+
+// Grid
+$grid-columns: 12;
+
+$xs-max: $xs; // Set xs breakpoint's max width
+$sm-max: $md; // Set sm breakpoint's max width
+$md-max: $lg; // Set md breakpoint's max width
+$lg-max: $xl; // Set lg breakpoint's max width
+
+$gutter: 1rem; // Set gutter size
+
+.transition, .btn-action{
+  opacity:.9;
+  -webkit-transition: ease .3s;
+  -moz-transition: ease .3s;
+  -ms-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+  &:hover{
+    opacity:1;
+  }
+}
+.wrapper{
+  padding:0 20px;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+html, body{
+  color: white;
+  background-color: #151515;
+  &.home, .bg-gradient{
+
+    background: rgb(227,209,200);
+    background: linear-gradient(180deg, rgba(227,209,200,0) 0%, rgba(21,21,21,1) 70%, rgba(21,21,21,1) 100%);
+  }
+}
+body{
+  overflow: hidden;
+}
+.button{
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid $accent-color;
+  color: $accent-color;
+  width: auto;
+  padding: 5px 40px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+
+}

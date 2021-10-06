@@ -1,0 +1,199 @@
+html {
+  font-size: 62.5%!important;
+  //font-size: 50%;
+  overflow-x: hidden;
+  font-family: $base-font;
+}
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+ 
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('assets/fonts/Avenir Light.ttf') format('truetype');
+  font-weight: normal;
+}
+
+a {
+  transition: $transition;
+  text-decoration: none;
+  color: $accent-color;
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+p{
+  font-size: 1.3rem;
+  line-height: 22px;
+  letter-spacing: .75px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+}
+.base-title{
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+  margin-top: 15px;
+}
+strong,
+b,
+.bold {
+  font-family: $base-font-extrabold;
+  letter-spacing: .75px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  font-family: $base-font;
+  a {
+    font-family: $base-font;
+    font-weight: 900;
+  }
+}
+
+.text-small {
+  font-size: 1.2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+h2{
+  font-size: 3.6rem;
+  line-height: 48px;
+}
+h3{
+  font-size: 2.0rem;
+  line-height: 30px;
+  color: white;
+}
+.subtitle{
+  font-size: 2.4rem;
+  line-height: 34px;
+  font-weight: normal;
+}
+.cat{
+  color: $blue-grey;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  a{
+    color: $blue-grey;
+    letter-spacing: .05rem;
+
+  }
+}
+.view{
+  margin: 20px 0;
+  a{
+    color: $dark-blue;
+    font-size: 1.6rem;
+    //border-bottom: 3px solid $red;
+    font-weight: 600;
+    padding-bottom: 0;
+    position: relative;
+    &:after{
+      transition: all linear .1s;
+      content: '';
+      border-bottom: 3px solid $red;
+      width:100%;
+      display: inline-block;
+      position: absolute;
+      left:0;
+      bottom:-1px;
+    }
+    &:hover{
+      //padding-bottom: 5px;
+      &:after{
+        bottom:-4px;
+      }
+    }
+  }
+}
+a{
+  color: white;
+  a:hover{
+    color: $accent-color;
+  }
+}
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6, .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge, .uk-heading-2xlarge{
+  color: white;
+}
+.highlight-block{
+  h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6, .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge, .uk-heading-2xlarge{
+    color: $white;
+  }
+}
+
+h2.base{
+  font-family: $base-font;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+  text-transform: uppercase;
+}
+h3.base{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3.3px;
+}
+h2.small{
+  text-transform: uppercase;
+  font-size: 3.3rem;
+  font-weight: 500;
+  letter-spacing: 2.6px;
+}
+h3.accent{
+  font-size: 3.6rem;
+  line-height: 1.11;
+  letter-spacing: 2.8px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+p.upper{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 3.1px;
+}
+.title-accent{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $accent-color;
+  margin: 10px 0 0;
+}

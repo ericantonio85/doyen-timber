@@ -1,0 +1,22 @@
+<div class="our-team">
+        <img class="deco" src="assets/image/ou-team-bg.svg" alt="">
+        <h2 class="base-title text-center">
+            {{ block.title }}
+        </h2>
+        <div class="team-flex flex flex-wrap justify-center">
+            {% for item in block.team %}
+                <div class="team">
+                    <div class="pix" style="background-image:url('{{ item.image.url }}');">
+                        <div class="bio">
+                            <div class="location"><b>{{ item.team_location }}</b></div>
+                            <div class="content"><p>{{ item.team_content }}</p></div>
+                            <div class="values"><span>Values : </span>{{ item.team_values }}</div>
+                        </div>
+                    </div>
+                    <h3 class="uppercase">{{ item.team_name}}</h3>
+                    <p class="uppercase func">{{ item.team_function }}</p>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>

@@ -1,0 +1,128 @@
+
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="what-we-do.twig">
+    <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
+    
+
+    <div class="black-header ">
+        {% block header %}
+            <div class="header-bg ">
+                <div class="wrapper max-w-screen-xl mx-auto">
+                    <header>
+                        <div class="logo float-left">
+                            <a href="{{site.url}}"><img src="{{theme.link}}/assets/image/logo-white.svg" alt="{{site.name}}"></a>
+                        </div>
+
+                        <nav id="nav-main" class="nav-main" role="navigation">
+                            {% include "menu.twig" with {'items': menu.get_items} %}
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </nav><!-- #nav -->
+
+                    </header>
+            
+                </div>
+            </div>
+        {% endblock %}
+    
+    </div>
+
+    <div class="basic-hero-area flex" style="background-image: url('{{ post.thumbnail.src }}');">
+        <h1 class="uppercase">{{ post.title }}</h1>
+    </div>
+
+    <div class="what-we-do-cta">
+        <h4 class="title">Doyen’s difference</h4>
+        <h2 class="uppercase mb-8">starts with our people</h2>
+    </div>
+
+    {# <div class="three-col-section flex justify-center">
+        <div class="col">
+            <a href="">
+                <i class="icon compassionate"><span></span></i>
+                <h3>Compassionate</h3>
+            </a>
+            <p>We are not interventionists saving lives. 
+                We are compassionate and collaborative change makers with a vision to revolutionize the mental health care experience that our families deserve. </p>
+        </div>
+
+        <div class="col">
+            <a href="">
+                <i class="icon diverse"><span></span></i>
+                <h3>Diverse expertise</h3>
+            </a>
+            <p>Our people have spent countless hours creating sustainable, impactful change in family systems who were once where you are right now. They coach, guide, support and celebrate progress with our families as they walk alongside them through this process. Overall, we create intentional interactions for connection and foster relationships built on trust and rapport. </p>
+        </div>
+
+        <div class="col">
+            <a href="">
+                <i class="icon impactful"><span></span></i>
+                <h3>Impactful</h3> 
+            </a>
+            <p>We have naturally evolved a team of professionals with diverse backgrounds and areas of expertise to bring connection to those in need and inspire motivation that create tangible change.
+            </p>
+        </div>
+    </div> #}
+    
+    {# <div class="our-team">
+        <img class="deco" src="assets/image/ou-team-bg.svg" alt="">
+        <h2 class="base-title text-center">
+            Our team
+        </h2>
+        <div class="team-flex flex flex-wrap justify-center">
+            <div class="team">
+                <div class="pix"></div>
+                <h3 class="uppercase">Jennifer <br> Tarzia</h3>
+                <p class="uppercase func">CEO</p>
+            </div>
+            <div class="team">
+                <div class="pix"></div>
+                <h3 class="uppercase">Chelsea <br>
+                    Brigham
+                    </h3>
+                <p class="uppercase func">Director of Operations</p>
+            </div>
+            <div class="team">
+                <div class="pix"></div>
+                <h3 class="uppercase">Christian<br> 
+                    Farr
+                    </h3>
+                <p class="uppercase func">Behavioral Advisor</p>
+            </div>
+            <div class="team">
+                <div class="pix"></div>
+                <h3 class="uppercase">Brad <br>
+                    Osborn
+                    </h3>
+                <p class="uppercase func">Behavioral Advisor</p>
+            </div>
+            <div class="team">
+                <div class="pix"></div>
+                <h3 class="uppercase">Zach <br>
+                    Schulze
+                    </h3>
+                <p class="uppercase func">Behavioral Advisor</p>
+            </div>
+        </div>
+    </div> #}
+
+    {% include "templates/block/block-logic.twig" %}
+
+    {% block footer %}
+        {% include 'footer.twig' %}
+        {{ function('wp_footer') }}
+    {% endblock %}
+	</body>
+</html>
+
+

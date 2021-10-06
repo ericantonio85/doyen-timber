@@ -1,0 +1,8 @@
+<div class="what-we-do-cta">
+    <h4 class="title">{{ block.top_text }}</h4>
+    <h2 class="uppercase mb-8">{{ block.title }}</h2>
+    {{ block.content | wpautop }}
+    {% if block.link.title is not empty %}
+    <div><a href="{{ block.link.url }}" class="cta">{{ block.link.title }}</a></div>
+    {% endif %}
+</div>

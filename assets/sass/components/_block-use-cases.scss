@@ -1,0 +1,115 @@
+.block-use-cases{
+  background-color: $black;
+  padding:100px 0 10px;
+  color: $white;
+  border-bottom: 1px solid $blue-grey;
+  .home-page &{
+    padding-top: 65px;
+  }
+  .wrapper{
+    text-align: center;
+    @include min-screen($l){
+      display: flex;
+      text-align: left;
+    }
+    .left-title{
+      @include min-screen($l){
+        min-width:380px;
+        width:400px;
+      }
+      h2{
+        font-size: $heading-font-size;
+        margin-top: 0;
+        line-height: 48px;
+      }
+      p{
+        color: $grey-blue;
+        font-size: 2.0rem;
+        @include min-screen($l){
+          font-size: 2.4rem;
+
+        }
+      }
+    }
+    .block-use-cases-items{
+      margin-top: 40px;
+      @include min-screen($l){
+        max-width:700px;
+        margin:20px auto;
+      }
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .item{
+        text-align: center;
+        min-width:220px;
+        margin-bottom: 50px;
+        @include max-screen($s){
+          min-width:140px;
+        }
+        .logo-img {
+          position: relative;
+          width:80px;
+          height:80px;
+          margin:0 auto;
+          img{
+            position: absolute;
+            width:80px;
+            display: block;
+            margin:0 auto;
+            &.hover-image{
+              opacity:0;
+              transition: opacity ease .5s;
+              &:hover{
+                opacity:1;
+              }
+            }
+          }
+        }
+        .title{
+          max-width:115px;
+          margin: 20px auto 10px;
+          a{
+            color: $white;
+            line-height: 24px;
+            font-size: 1.9rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .block-use-cases-items {
+      margin-top: 80px !important;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.btn-action{
+  text-align: center;
+  color: $white;
+  background-color: $red;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.68px;
+  border-radius: 40px;
+  display: inline-block;
+  padding-top: 17px;
+  width: 240px;
+  height: 55px;
+  font-weight: 600;
+  line-height: 21px;
+  &.small{
+    padding:10px 30px;
+    height: 42px;
+    width: 168px;
+    font-size: 1.2rem;
+  }
+  &:hover{
+    color: $white;
+    border-radius: 0;
+  }
+}

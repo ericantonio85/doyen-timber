@@ -1,0 +1,45 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="what-we-do.twig">
+    <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
+    
+
+    <div class="black-header ">
+        {% block header %}
+            <div class="header-bg ">
+                <div class="wrapper max-w-screen-xl mx-auto">
+                    <header>
+                        <div class="logo float-left">
+                            <a href="{{site.url}}"><img src="{{theme.link}}/assets/image/logo-white.svg" alt="{{site.name}}"></a>
+                        </div>
+
+                        <nav id="nav-main" class="nav-main" role="navigation">
+                            {% include "menu.twig" with {'items': menu.get_items} %}
+                        </nav><!-- #nav -->
+
+                    </header>
+            
+                </div>
+            </div>
+        {% endblock %}
+    
+    </div>
+
+    <div class="basic-hero-area flex" style="background-image: url('{{ post.thumbnail.src }}');">
+        <h1 class="uppercase">{{ post.title }}</h1>
+    </div>
+
+    {% include "templates/block/block-logic.twig" %}
+
+    {% block footer %}
+        {% include 'footer.twig' %}
+        {{ function('wp_footer') }}
+    {% endblock %}
+	</body>
+</html>
