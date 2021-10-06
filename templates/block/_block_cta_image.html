@@ -1,8 +1,10 @@
-    <div class="cta-image">
+    <div class="cta-image {{block.class}}">
         <div class="bg" style="background-image: url('{{ block.background_image }}');">
             <div class="content">
                 <h3>{{ block.content }} </h3>
-                <a href="{{ block.link.url }}" class="link">{{ block.link.title }}</a>
+                {% if block.link.url is not empty%}
+                    <a href="{{ block.link.url }}" class="link">{{ block.link.title }}</a>
+                {% endif %}
             </div>
         </div>
         

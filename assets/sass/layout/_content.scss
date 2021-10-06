@@ -975,6 +975,15 @@ a.cta{
   background-color: black;
   position: relative;
   z-index: 2;
+  &.large-paragraph{
+    .bg p{
+      font-size: 1.7rem;
+      line-height: 36px;
+      margin: 0 0 20px;
+      padding: 0 20px;
+      max-width: 880px;
+    }
+  }
   .bg{
     height: 100%;
     width: auto;
@@ -997,8 +1006,11 @@ a.cta{
       line-height: 25px;
     }
     p{
-      margin: 20px 0
+      margin: 20px auto;
+      max-width: 945px;
+      padding: 20px
     }
+    
     a{
       @extend .button;
       text-transform: uppercase;
