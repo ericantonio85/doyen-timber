@@ -9,22 +9,6 @@
   ],
   "creatorBuild" : "34214",
   "files" : {
-    "\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.gitignore",
-      "oF" : 0
-    },
-    "\/.travis.yml" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.travis.yml",
-      "oF" : 0
-    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1338,26 +1322,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/assets\/sass\/style.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/sass\/style-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/assets\/sass\/style.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/sass\/style.css.map",
-      "oF" : 0
-    },
     "\/assets\/sass\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -2009,28 +1973,12 @@
       "oAP" : "\/what-we-do-page.php",
       "oF" : 0
     },
-    "\/what-we-do.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/what-we-do.html",
-      "oF" : 0
-    },
     "\/who-we-are-page.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/who-we-are-page.php",
-      "oF" : 0
-    },
-    "\/who-we-are.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/who-we-are.html",
       "oF" : 0
     }
   },
