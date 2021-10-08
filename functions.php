@@ -169,6 +169,7 @@ new StarterSite();
 function wpdocs_theme_name_scripts() {
     // wp_enqueue_style( 'style', get_stylesheet_uri().'/style.css' );
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js', array ( 'jquery' ), 1.1, true);
+	wp_enqueue_script( 'jqueryui', 'https://code.jquery.com/ui/1.13.0/jquery-ui.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array ( 'jquery' ), 1.1, true);
 
 }

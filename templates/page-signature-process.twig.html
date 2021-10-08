@@ -39,10 +39,90 @@
     <div class="basic-hero-area signature flex" style="background-image: url('{{ post.thumbnail.src }}');">
         <h1>{{ post.title }}</h1>
         <p>
-            Families use Doyen’s Signature Process to intercede on a crisis affecting their family or a loved one. <br/>   
-They often feel like they have tried everything or have no idea where to start. 
-If this resonates with you, our Signature Process may be for you. 
+            {{ post.content | wpautop }}
         </p>
+    </div>
+
+    <div class="how-it-works">
+        <div class="background">
+            <img src="{{theme.link}}/assets/image/left-plant.svg')" alt="">
+        </div>
+        <div class="wrap">
+            <h2>How it works</h2>
+            <div class="content">
+                <div class="header">
+                    <p>Doyen Consulting Group 
+                        carefully listens to the problem
+                        or crisis your family is experiencing</p>
+                    <p>We then integrate a three-pronged
+                            approach to change:</P>
+                </div>
+    
+                <div class="list-item">
+                    <div class="item">
+                        <div class="image">
+                            <img src="{{theme.link}}/assets/image/icons_static/Icon-Connection.svg" alt="">
+                            <img src="{{theme.link}}/assets/image/hover_icons/Icon-Connection-Hover.svg" alt="" class="icon-hover">
+                        </div>
+                        <div class="text">
+                            <h3>Create connection</h3>
+                            <p>Evidence proves that social support and meaningful relationships are just as crucial to wellbeing as food and water. Unfortunately, addiction and mental illness often to lead to withdrawal, isolation and abandonment from those closest to them. Our goal is to build authentic connection outside the current support system. We begin this step by providing families with a specific script to introduce this Doyen Advisor. </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="{{theme.link}}/assets/image/icons_static/Icon-Connection.svg" alt="">
+                            <img src="{{theme.link}}/assets/image/hover_icons/Icon-Connection-Hover.svg" alt="" class="icon-hover">
+                        </div>
+                        <div class="text">
+                            <h3>Create connection</h3>
+                            <p>Evidence proves that social support and meaningful relationships are just as crucial to wellbeing as food and water. Unfortunately, addiction and mental illness often to lead to withdrawal, isolation and abandonment from those closest to them. Our goal is to build authentic connection outside the current support system. We begin this step by providing families with a specific script to introduce this Doyen Advisor. </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="{{theme.link}}/assets/image/icons_static/Icon-Connection.svg" alt="">
+                            <img src="{{theme.link}}/assets/image/hover_icons/Icon-Connection-Hover.svg" alt="" class="icon-hover">
+                        </div>
+                        <div class="text">
+                            <h3>Create connection</h3>
+                            <p>Evidence proves that social support and meaningful relationships are just as crucial to wellbeing as food and water. Unfortunately, addiction and mental illness often to lead to withdrawal, isolation and abandonment from those closest to them. Our goal is to build authentic connection outside the current support system. We begin this step by providing families with a specific script to introduce this Doyen Advisor. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="relationship-of-trust" style="background-image: url('{{theme.link}}/assets/image/relationship.png');">
+        <div class="wrap">
+            <h2>Build a Relationship of trust</h2>
+        <p>We involve your loved one in the process whenever possible, as early in the process as possible. We believe that their point of view is crucial to their successful recovery, and we want to communicate that to them. Building a relationship of rapport and trust allows us to come alongside them as we all, collectively, navigate their recovery journey.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="wrap">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <dl class="accordion">
+
+                <dt><a href="">My loved one is refusing help. How can we get them involved?<span class="chevron"></span></a> 
+                </dt>
+                <dd>While we cannot FORCE anyone to change, we can create motivation to change. Though our process is inclusive and invitational, there are still times when a loved one refuses to engage. When this occurs, we carefully coach the family system to identify limits and boundaries that they can set to increase motivation for engagement.  </dd>
+                <div class="row"></div>
+                <dt><a href="">Panel 2<span class="chevron"></span></a></dt>
+                <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+                <div class="row"></div>
+                <dt><a href="">Panel 3<span class="chevron"></span></a></dt>
+                <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+                <div class="row"></div>
+                
+            </dl>
+
+        </div>
     </div>
 
     {% include "templates/block/block-logic.twig" %}

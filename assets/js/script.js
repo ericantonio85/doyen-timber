@@ -30,11 +30,29 @@ jQuery(function($){
         $('#tabs li a').addClass('inactive');         
         $(this).removeClass('inactive');
         $('.container-tab').hide();
-        $(t).fadeIn('slow');    
+        $(this).fadeIn('slow');    
     }
 
     $('.hamburger').click(function(){
         $('.nav-main').toggleClass('active');
         $(this).toggleClass('active');
     })
+
+    $( "#accordion" ).accordion();
+
+    var allPanels = $('.accordion > dd').hide();
+    
+    $('.accordion > dt > a').click(function() {
+        if($(this).hasClass('active')){
+
+        } else {
+            $('.accordion a').removeClass('active');
+            $(this).addClass('active');
+            allPanels.slideUp();
+            $(this).parent().next().slideToggle();
+        }
+        
+        return false;
+    });
 });
+

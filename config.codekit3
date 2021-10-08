@@ -49,6 +49,26 @@
       "oAP" : "\/assets\/fonts\/BrittanySignature.ttf",
       "oF" : 0
     },
+    "\/assets\/image\/chevron-active.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/image\/chevron-active.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/image\/chevron.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/image\/chevron.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/image\/core-values1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -385,6 +405,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/image\/left-plant.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/image\/left-plant.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/image\/lipsumimage.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -424,6 +454,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/assets\/image\/relationship.png" : {
+      "ft" : 32768,
+      "iS" : 54965,
+      "oA" : 0,
+      "oAP" : "\/assets\/image\/relationship.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/assets\/image\/what-we-do.svg" : {
       "ft" : 2097152,

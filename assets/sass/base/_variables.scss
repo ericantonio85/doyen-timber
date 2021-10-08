@@ -74,6 +74,11 @@ $gutter: 1rem; // Set gutter size
 .wrapper{
   padding:0 20px;
 }
+.wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 #background-video {
   width: 100vw;
@@ -109,4 +114,13 @@ body{
   font-size: 1.4rem;
   letter-spacing: 2px;
 
+}
+span.chevron{
+  width: 29px;
+  height: 15px;
+  display: block;
+  background: url(assets/image/chevron.svg) no-repeat center center;
+  .active &{
+    background-image: url(assets/image/chevron-active.svg);
+  }
 }
