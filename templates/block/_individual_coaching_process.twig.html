@@ -1,0 +1,27 @@
+<div class="individual-coaching-process">
+    <div class="background">
+        <img src="{{theme.link}}/assets/image/left-plant.svg')" alt="">
+    </div>
+    <div class="wrap">
+        <div class="paragraph">
+            {{ block.paragraph | wpautop}}
+        </div>
+        <div class="content">
+            <div class="list-item">
+                {% for item in block.list_items %}
+                <div class="item">
+                    <div class="image">
+                        <img src="{{ item.icon }}" alt="">
+                        <img src="{{ item.icon_hover }}" alt="" class="icon-hover">
+                    </div>
+                    <div class="text">
+                        <h3>{{ item.title }}</h3>
+                    </div>
+                </div>    
+                {% endfor %}
+                
+                
+            </div>
+        </div>
+    </div>        
+</div>

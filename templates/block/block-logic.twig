@@ -33,6 +33,10 @@
         {% include 'block/_block_relationship.twig.html' %}
     {% elseif block_class == 'block_faq' %}
         {% include 'block/_block_faq.twig.html' %}
+    {% elseif block_class == 'individual_coaching_process' %}
+        {% include 'block/_individual_coaching_process.twig.html' %}
+    {% elseif block_class == 'simple_block_content' %}
+        {% include 'block/_simple_block_content.twig.html' %}
     {% endif %}
 
 {% endfor %}

@@ -1018,3 +1018,21 @@ a.cta{
     }
   }
 }
+
+.simple-block-content{
+  text-align: center;
+  padding: 100px 20px;
+  .wrap{
+    padding: 20px;
+    h2{
+      @extend .baseh2;
+    }
+    h4{
+      @extend .textupper;
+      margin: 20px 0;
+    }
+    p{
+      margin: 20px 0;
+    }
+  }
+}

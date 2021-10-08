@@ -1,0 +1,149 @@
+.basic-hero-area.individual-coaching {
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-bottom: 70px;
+    h1{
+        margin-bottom: 0px;
+        font-size: 4.5rem;
+
+    }
+    p{
+        padding: 10px;
+        max-width: 886px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.individual-coaching-process{
+    position: relative;
+    padding-top: 70px;
+    .background{
+        @media screen and (max-width: 900px){
+            display: none;
+        }
+        width: 900px;
+        img{
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: -15%;
+            width: 900px;
+            height: auto;
+
+        }
+    }
+    .wrap{
+        max-width: 1100px;
+        margin: 0 auto;
+        overflow: hidden;
+        @media screen and (min-width: 900px){
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+        }
+        .paragraph{
+            padding-bottom: 50px;
+        }
+        .paragraph p{
+            max-width: 498px;
+            text-transform: uppercase;
+            font-size: 1.9rem;
+            line-height: 30px
+
+        }
+    }
+
+    h2{
+        @extend h2.base;
+        // max-width: 50%;
+        padding: 20px;
+    }
+    .content{
+        position: relative;
+        z-index: 2;
+        max-width: 600px;
+        padding: 0 20px;
+        
+        .list-item{
+            position: relative;
+            padding-bottom: 50px;
+            @media screen and (min-width: $sm){
+                &:after{
+                    content: '';
+                    width: 2px;
+                    background-color: white;
+                    height: 100%;
+                    position: absolute;
+                    left: 55px;
+                    top: 5px;
+                }
+            }
+        }
+        .item{
+            margin-bottom: 50px;
+            @media screen and (min-width: $sm){
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+            }
+            &:hover{
+                .image .icon-hover{
+                    opacity: 1;
+                }
+                .text h3{
+                    color: $accent-color;
+                }
+            }
+            .image{
+                position: relative;
+                min-width: 160px;
+                @media screen and (max-width: $sm){
+                    padding-bottom: 20px;
+                    img{
+                        margin: 0 auto;
+                        &.icon-hover{
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+                .icon-hover{
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                }
+                img{
+                    transition: .2s linear all;
+                    width: 110px;
+                    height: 110px;
+                    display: block
+                }
+            }
+            .text{
+                h3{
+                    @extend .title-accent;
+                    color: white;
+                    line-height: 25px;
+                    transition: .2s linear all;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    
+                }
+                h3, p{
+                    text-align: left;
+                    @media screen and (max-width: $sm) {
+                        text-align: center;
+                    }
+            
+                }
+
+            }
+        }
+
+    }
+    
+}
+
