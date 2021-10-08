@@ -78,6 +78,13 @@ $gutter: 1rem; // Set gutter size
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
+  clear: both;
+}
+clr{
+  clear: both;
+  width: 100%;
+  display: block;
 }
 
 #background-video {

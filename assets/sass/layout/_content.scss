@@ -317,6 +317,15 @@ a.cta{
   justify-content: center;
   position: relative;
   background: #151515;
+  &:before{
+    content: '';
+    background: rgba(0,0,0,.7);
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
   &:after{
     content: '';
     background: #151515;
@@ -334,6 +343,8 @@ a.cta{
     line-height: 1.29;
     letter-spacing: 0.86px;
     text-align: center;
+    position: relative;
+    z-index: 2;
     @media screen and (max-width: $md){
       font-size: 5rem;;
     }
@@ -807,6 +818,28 @@ a.cta{
     min-height: 330px;
     max-width: 421px;
     padding: 15px;
+    &:first-of-type{
+      .box{
+        &:before{
+          background-color: #3C1514;
+        }
+      }
+    }
+    &:nth-of-type(2){
+      .box{
+        &:before{
+          background-color: #944012;
+        }
+      }
+    }
+    &:nth-of-type(3){
+      .box{
+        &:before{
+          background-color: #65869C;
+        }
+      }
+    }
+    
     .box{
       background-color: black;
       width: 100%;
@@ -818,6 +851,20 @@ a.cta{
       background-size: cover;
       background-repeat: no-repeat;
       background-position: left center;
+      position: relative;
+      &:before{
+        position: absolute; 
+        opacity: .75;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+      }
+      >div{
+        position: relative;
+        z-index: 2;
+      }
       h3{
         @extend .title-accent;
         text-align: left;

@@ -2,6 +2,7 @@
 .basic-hero-area.signature {
     justify-content: center;
     flex-direction: column;
+
     h1{
         font-family: 'Signature';
         text-transform: capitalize;
@@ -12,6 +13,8 @@
         max-width: 764px;
         text-align: center;
         margin: 0 auto;
+        position: relative;
+        z-index: 2;
     }
 }
 

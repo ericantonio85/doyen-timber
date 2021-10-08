@@ -1,0 +1,158 @@
+.basic-hero-area.family-coaching{
+    flex-direction: column;
+    padding: 0 20px;
+    h1{
+        font-size: 6.4rem;
+        margin-bottom: 15px;
+        @media screen and (max-width: $sm) {
+            font-size: 5.6rem;
+        }
+    }
+    p{
+        position: relative;
+        z-index: 2;
+    }
+    blockquote{
+        text-align: center;
+    }
+}
+.block-text-small{
+    max-width: 490px;
+    .textupper{
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+}
+.block-text-right{
+    text-align: right;
+    max-width: 704px;
+    float: right;
+    position: relative;
+    z-index: 2;
+    h3{
+        text-align: right;
+        @extend h3.base;
+        font-weight: normal;
+        margin: 10px 0;
+        font-size: 2.1rem;
+        line-height: 31px;
+        &.title-accent{
+            color: $accent-color;
+        }
+    }
+    p{
+        margin: 20px 0 40px;
+    }
+}
+
+.family-coaching-definition{
+    padding: 150px 0px;
+    position: relative;
+    z-index: 2;
+    h2{
+        @extend .baseh2;
+        text-align: center;
+        font-size: 4.3rem;
+        margin-bottom: 70px;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+        position: relative;
+        @media screen and (max-width: $sm){
+            padding: 12px;
+            margin: 50px 0;
+            overflow: hidden;
+        }
+        
+        .bg{
+            width: 440px;
+            height: 510px;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            
+            
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            @media screen and (max-width: $sm){
+                left: 0;
+                right: 0;
+                top: 0;
+                margin: 0 auto;   
+            }
+        }
+        &:nth-child(odd){
+            .bg{
+                left: auto;
+                right: 0;
+                @media screen and (max-width: $sm){
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;   
+                }
+            }
+        }
+        .card{
+            max-width: 418px;
+            min-height: 370px;
+            background-color: black;
+            border-top: 4px solid $accent-color;
+            padding: 20px 0;
+            position: relative;
+            z-index: 2;
+            @media screen and (max-width: $md){
+                margin: 10px;
+            }
+            .inner{
+                h3{
+                    @extend .title-accent;
+                    text-align: left;
+                    margin-bottom: 40px;
+                    
+                }
+                margin: 40px;
+            }
+        }
+    }
+}
+.black-section{
+    &.family-coaching{
+        padding: 70px 0;
+        .wrap{
+            max-width: 968px;
+        }
+        h2.uppercase{
+            @extend .title-accent;
+            font-size: 2.4em;
+        }
+        h4.uppercase{
+            @extend h3.base;
+            font-weight: normal;
+            font-size: 2.8rem;
+            margin: 10px 0 30px;
+        }
+    }
+}
+.with-bg{
+    position: relative;
+    overflow: visible;
+    img{
+        position: absolute;
+        left: -450px;
+        top: 50px;
+        transform: rotate(10deg);
+        @media screen and (max-width: $lg){
+            left: -300px;
+        }
+        @media screen and (max-width: $md){
+            display: none;
+        }
+    }
+
+}
