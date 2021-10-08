@@ -4,7 +4,7 @@
     {% if block_class == 'black_cta' %}
         {% include 'block/_black_cta.twig' %}
     {% elseif block_class == 'home_caroussel' %}
-        {% include 'block/_block_home_caroussel.twig' %}
+        {% include 'block/_block_testimonial.html.twig' %}
     {% elseif block_class == 'block_text_image' %}
         {% include 'block/_block_text_image_bg.twig' %}
     {% elseif block_class == 'what_we_do_cta' %}
@@ -27,6 +27,12 @@
         {% include 'block/_how_we_do_it_content.html' %}
     {% elseif block_class == 'block_cta_image' %}
         {% include 'block/_block_cta_image.html' %}
+    {% elseif block_class == 'how_it_works_signature_process' %}
+        {% include 'block/_how_it_works_signature_process.twig.html' %}
+    {% elseif block_class == 'block_relationship' %}
+        {% include 'block/_block_relationship.twig.html' %}
+    {% elseif block_class == 'block_faq' %}
+        {% include 'block/_block_faq.twig.html' %}
     {% endif %}
 
 {% endfor %}

@@ -1,0 +1,19 @@
+<div class="faq">
+    <div class="wrap">
+
+        <h2>{{block.title}}</h2>
+
+        <dl class="accordion">
+            {% for item in block.list_items %}
+                <dt>
+                    <a href="">{{ item.title}}<span class="chevron"></span></a> 
+                </dt>
+                <dd>
+                    {{ item.content | wpautop }}
+                </dd>
+                <div class="row"></div>    
+            {% endfor %}
+        </dl>
+
+    </div>
+</div>

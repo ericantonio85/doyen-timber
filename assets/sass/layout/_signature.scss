@@ -11,11 +11,13 @@
         padding: 20px;
         max-width: 764px;
         text-align: center;
+        margin: 0 auto;
     }
 }
 
 .how-it-works{
     position: relative;
+    padding-top: 70px;
     .background{
         @media screen and (max-width: 900px){
             display: none;
@@ -35,10 +37,11 @@
     .wrap{
         max-width: 1100px;
         margin: 0 auto;
+        overflow: hidden;
         @media screen and (min-width: 900px){
             display: flex;
             justify-content: space-between;
-            padding: 20px;
+            padding: 0 20px;
         }
     }
 
@@ -128,6 +131,9 @@
                 }
                 h3, p{
                     text-align: left;
+                    @media screen and (max-width: $sm) {
+                        text-align: center;
+                    }
             
                 }
 
@@ -144,7 +150,12 @@
     align-items: center;
     display: flex;
     background-size: contain;
-    background-position: center center;
+    background-position: center bottom;
+    @media screen and (max-width: $md) {
+        height: auto;
+        padding: 50px 0;
+        margin-top: 0;
+    }
 
     .wrap{
         margin: 0 auto;
@@ -167,6 +178,9 @@
 .faq{
     background-color: black;
     padding: 20px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 160px;
     h2{
         @extend h2.base;
         font-size: 4.1rem;
@@ -194,6 +208,7 @@
                     line-height: 21px;
                     color: white;
                     font-size: 1.6rem;
+                    padding-right: 40px;
                     &.active{
                         color: $accent-color;
                     }
@@ -201,6 +216,8 @@
                     top: 10px;
                     span.chevron{
                         float: right;
+                        position: relative;
+                        left: 40px
                         // position: relative;
                         // top: 10px
                     }
@@ -209,6 +226,7 @@
            dd {
               @extend p;
               padding-top: 20px;
+              margin-left: 0;
            }
            dt{
                padding: 15px 0;
