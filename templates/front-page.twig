@@ -57,7 +57,7 @@
         </div>
 
 
-        <div class="section xl:flex xl:justify-around">
+        <div class="section xl:flex xl:justify-around" id="relief">
             <div class="left-content xl:text-left text-center pb-20">
                 <div class="title">{{ post.how_we_help_title }}</div>
                 <div class="content xl:m-0 my-10 m-auto ">
@@ -69,7 +69,7 @@
             {% for item_outer in post.meta('how_we_help_icons') %}
 
                 <div class="icon-text-link">
-                    <a href="#" class="flex">
+                    <a href="{{ item_outer.link.url }}" class="flex">
                         <div class="relative">
                             <span class="icon ico-hands static"> <img src="{{ item_outer.icon_svg_static }}" /></span>
                             <span class="icon ico-hands hover"> <img src="{{ item_outer.icon_svg_hover }}" /></span>

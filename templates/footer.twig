@@ -2,28 +2,37 @@
     <div class="wrapper max-w-screen-xl mx-auto">
         <div class="flex-footer">
             <div class="logo">
-                <a href="#"><img src="{{theme.link}}/assets/image/logo-white.svg" alt="Doyen"></a>
+                <a href="{{ site.url }}"><img src="{{theme.link}}/assets/image/logo-white.svg" alt="Doyen"></a>
             </div>
             <div class="link">
-                <ul>
+                {{options.first_column}}
+                {# <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Your Doyen Experience</a></li>
                     <li><a href="">Meet Your Team</a></li>
                     <li><a href="">Contact Us</a></li>
-                </ul>
+                </ul> #}
             </div>
             <div class="link">
-                <div class="title">Schedule a Consultation</div>
+                {{ options.second_column }}
+                {# <div class="title">Schedule a Consultation</div>
                 <div class="mail"><a href="mailto:Hello@doyencg.com">Hello@doyencg.com</a></div>
-                <div class="phone">(800) 824-0409</div>
+                <div class="phone">(800) 824-0409</div> #}
             </div>
             <div class="follow-us">
                 <div class="title">Follow Us</div>
-                <div>icon social network</div>
+                <div>
+                    {{ options.social_network }}
+                    {# <ul>
+                        <li><a href="#"><i class="fab fa-instagram"><b>instagram</b></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"><b>twitter</b></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"><b>facebook</b></i></a></li>
+                   </ul> #}
+                </div>
             </div>
         </div>
         <div class="link-bottom">
-            <a href="">Privacy Policy</a>
+            <a href="{{ options.privacy_policy.url }}">{{ options.privacy_policy.title }}</a>
             <span class="copyright">Copyright 2021</span>
         </div>
     </div>

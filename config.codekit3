@@ -25,6 +25,22 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/Archive.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Archive.zip",
+      "oF" : 0
+    },
+    "\/assets\/Archive.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/Archive.zip",
+      "oF" : 0
+    },
     "\/assets\/fonts\/Avenir Light.ttf" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1647,6 +1663,14 @@
       "oAP" : "\/page-individual-coaching.php",
       "oF" : 0
     },
+    "\/page-privacy-policy.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-privacy-policy.php",
+      "oF" : 0
+    },
     "\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2092,6 +2116,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/page-plugin.twig",
+      "oF" : 0
+    },
+    "\/templates\/page-privacy-policy.twig.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/page-privacy-policy.twig.html",
       "oF" : 0
     },
     "\/templates\/page-signature-process.twig.html" : {
