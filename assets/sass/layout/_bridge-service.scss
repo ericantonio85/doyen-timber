@@ -87,6 +87,19 @@
 
 .doyen_bridge_service{
     padding: 100px 0 0;
+    position: relative;
+    @media screen and (min-width: $md){
+        &:after{
+            content: '';
+            width: 719px;
+            height: 850px;
+            position: absolute;
+            bottom: 160px;
+            right: -100px;
+            background: url(assets/image/bridge-service-bg.svg) no-repeat right center;
+            background-size: cover;
+        }
+    }
     h2{
         @extend .baseh2;
         text-align: center;

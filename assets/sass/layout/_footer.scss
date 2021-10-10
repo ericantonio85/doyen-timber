@@ -40,6 +40,9 @@ footer{
         letter-spacing: 0.35px;
         text-align: left;
         color: #fff;
+        &:hover{
+          color: $accent-color;
+        }
       }
     }
   }
@@ -65,7 +68,7 @@ footer{
   .follow-us{
     ul{
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       margin-top: 5px;
       a{
         font-size: 1.6rem;

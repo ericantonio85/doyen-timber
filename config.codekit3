@@ -33,14 +33,6 @@
       "oAP" : "\/Archive.zip",
       "oF" : 0
     },
-    "\/assets\/Archive.zip" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/Archive.zip",
-      "oF" : 0
-    },
     "\/assets\/fonts\/Avenir Light.ttf" : {
       "cB" : 0,
       "ft" : 8192,
@@ -77,6 +69,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/assets\/image\/bridge-service-bg.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/image\/bridge-service-bg.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/assets\/image\/chevron-active.svg" : {
       "ft" : 2097152,
