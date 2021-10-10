@@ -1,0 +1,22 @@
+<div class="doyen_bridge_service">
+    <div class="wrap">
+        <h2>{{block.title}}</h2>
+
+        <div class="content">
+            <div class="list-item">
+                {% for item in block.list_item %}
+                <div class="item">
+                    <div class="image">
+                        <img src="{{ item.icon_static }}" alt="">
+                        <img src="{{ item.icon_hover }}" alt="" class="icon-hover">
+                    </div>
+                    <div class="text">
+                        <h4>{{ item.content }}</h4>
+                    </div>
+                </div>    
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
