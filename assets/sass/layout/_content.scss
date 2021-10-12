@@ -20,7 +20,10 @@
       line-height: 18px;
   }
 }
-
+.how-we-help{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .section{
   .left-content{
     .title{
@@ -50,7 +53,7 @@
       text-decoration: underline;
       position: absolute;
       z-index: 3;
-      left: 170px;
+      left: 165px;
       @media screen and (max-width: $sm){
         left: 135px;
       }

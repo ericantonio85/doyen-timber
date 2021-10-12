@@ -11,6 +11,8 @@ footer{
   color: #fff;
   overflow: hidden;
   padding: 20px 0;
+
+  font-family: 'Avenir';
   .flex-footer{
     @media screen and (min-width: $md){
       display: flex;
@@ -66,6 +68,10 @@ footer{
     }
   }
   .follow-us{
+    .title{
+      font-family: $base-font;
+      font-weight: bold;
+    }
     ul{
       display: flex;
       justify-content: flex-start;
